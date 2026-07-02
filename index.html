@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchorline Cargo — Global Freight Forwarding</title>
+<meta name="description" content="Anchorline Cargo moves ocean, air, rail and warehoused freight across 42 countries with 99.2% on-time delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <rect x="4" y="16" width="32" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M4 22 H36 M12 16 V30 M20 16 V30 M28 16 V30" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M2 30 L20 34 L38 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">ANCHORLINE<span class="brand-sub">CARGO</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#routes">Routes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-amber nav-cta" href="#quote">Get a Quote</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#routes">Routes</a>
+    <a href="#contact">Contact</a>
+    <a href="#quote" class="btn btn-amber">Get a Quote</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">GLOBAL FREIGHT FORWARDING · MANIFEST NO. <span id="manifestNo">AC-70142</span></p>
+        <h1>WE MOVE THE<br>WORLD'S <span class="hl">CARGO.</span></h1>
+        <p class="hero-lede">Ocean, air, rail and warehousing under one waybill. Anchorline plans the route, clears the paperwork, and puts your freight on the dock — on time, every time.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-amber">Get a Quote</a>
+          <a href="#services" class="btn btn-ghost">See services ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-doc" role="img" aria-label="Live shipment manifest showing vessel position and estimated arrival">
+        <div class="doc-rivet doc-rivet--tl"></div>
+        <div class="doc-rivet doc-rivet--tr"></div>
+        <div class="doc-rivet doc-rivet--bl"></div>
+        <div class="doc-rivet doc-rivet--br"></div>
+
+        <div class="doc-head">
+          <span>BILL OF LADING</span>
+          <span class="doc-head-status" id="voyageStatus">IN TRANSIT</span>
+        </div>
+
+        <dl class="doc-rows">
+          <div><dt>Vessel</dt><dd>MV Kestrel Bay</dd></div>
+          <div><dt>Origin</dt><dd>Port of Rotterdam</dd></div>
+          <div><dt>Destination</dt><dd>Port of Dar es Salaam</dd></div>
+          <div><dt>Position</dt><dd class="mono" id="coordReadout">04°18'S, 39°17'E</dd></div>
+          <div><dt>ETA</dt><dd class="mono" id="etaReadout">04:12:59:11</dd></div>
+        </dl>
+
+        <div class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 160 160" width="120" height="120">
+            <defs>
+              <path id="stampCircle" d="M80,20 a60,60 0 1,1 -0.1,0" />
+            </defs>
+            <circle cx="80" cy="80" r="58" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="80" cy="80" r="46" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <text font-family="Oswald, sans-serif" font-size="11.5" letter-spacing="3" fill="currentColor">
+              <textPath href="#stampCircle" startOffset="0%">ANCHORLINE CARGO • VERIFIED FREIGHT •</textPath>
+            </text>
+            <text x="80" y="86" text-anchor="middle" font-family="Oswald, sans-serif" font-size="20" font-weight="600" fill="currentColor">EST</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-bar">
+      <div class="wrap stat-bar-inner">
+        <div class="stat"><span class="stat-num" data-count="42">0</span><span class="stat-label">Countries served</span></div>
+        <div class="stat"><span class="stat-num" data-count="180">0</span><span class="stat-label">Vessel partners</span></div>
+        <div class="stat"><span class="stat-num" data-count="99" data-suffix=".2%">0</span><span class="stat-label">On-time delivery</span></div>
+        <div class="stat"><span class="stat-num" data-static="24/7">0</span><span class="stat-label">Operations desk</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-dark">WHAT WE MOVE</p>
+      <h2 class="section-title">One carrier, every mode.</h2>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+            <path d="M6 26 L24 8 L42 26 M12 26 V40 H36 V26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M4 40 H44" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <h3>Ocean Freight</h3>
+          <p>FCL and LCL container service across 60+ trade lanes, with consolidation and customs clearance handled end to end.</p>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+            <path d="M6 30 L38 18 L44 22 L30 28 L34 38 L28 38 L22 30 L14 33 L14 39 L10 39 L8 31 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <h3>Air Freight</h3>
+          <p>Time-critical and temperature-sensitive shipments on next-flight-out schedules, with door-to-airport pickup.</p>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+            <rect x="6" y="14" width="28" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            <circle cx="14" cy="36" r="3.4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="28" cy="36" r="3.4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M34 20 H42 L44 26 V32 H34" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          </svg>
+          <h3>Rail &amp; Road</h3>
+          <p>Cross-border trucking and intermodal rail for inland delivery, with live GPS tracking on every leg.</p>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+            <rect x="8" y="12" width="32" height="28" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M8 20 H40 M8 28 H40 M16 12 V40 M24 12 V40 M32 12 V40" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+          <h3>Warehousing</h3>
+          <p>Bonded and general storage at 11 hubs, with pick-pack-and-ship fulfillment tied to your order system.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <div class="wrap">
+      <p class="eyebrow">HOW A SHIPMENT MOVES</p>
+      <h2 class="section-title section-title-light">From booking to bill of lading.</h2>
+
+      <ol class="timeline">
+        <li>
+          <span class="tl-num">01</span>
+          <h3>Book</h3>
+          <p>Submit cargo details and preferred lane. We confirm space and rate within one business day.</p>
+        </li>
+        <li>
+          <span class="tl-num">02</span>
+          <h3>Pack &amp; label</h3>
+          <p>Freight is palletized, labeled, and matched against your commercial invoice and packing list.</p>
+        </li>
+        <li>
+          <span class="tl-num">03</span>
+          <h3>In transit</h3>
+          <p>Customs clearance runs in parallel while your shipment moves. Track position from the manifest above.</p>
+        </li>
+        <li>
+          <span class="tl-num">04</span>
+          <h3>Delivered</h3>
+          <p>Proof of delivery and final documentation land in your inbox the moment the container is unsealed.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ROUTES -->
+  <section id="routes" class="routes">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-dark">TRADE LANES</p>
+      <h2 class="section-title">Where we sail, fly and drive.</h2>
+      <p class="routes-lede">Anchorline runs scheduled capacity on the busiest corridors in global trade, with feeder service reaching inland hubs on both ends.</p>
+
+      <div class="route-map" aria-hidden="true">
+        <svg viewBox="0 0 900 380" width="100%" height="100%">
+          <g stroke="currentColor" stroke-opacity="0.18">
+            <line x1="0" y1="60" x2="900" y2="60"/>
+            <line x1="0" y1="130" x2="900" y2="130"/>
+            <line x1="0" y1="200" x2="900" y2="200"/>
+            <line x1="0" y1="270" x2="900" y2="270"/>
+            <line x1="0" y1="340" x2="900" y2="340"/>
+            <line x1="90" y1="0" x2="90" y2="380"/>
+            <line x1="270" y1="0" x2="270" y2="380"/>
+            <line x1="450" y1="0" x2="450" y2="380"/>
+            <line x1="630" y1="0" x2="630" y2="380"/>
+            <line x1="810" y1="0" x2="810" y2="380"/>
+          </g>
+          <path id="lane1" d="M110,90 Q 400,20 700,110" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="6 6"/>
+          <path id="lane2" d="M150,300 Q 420,340 760,230" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="6 6"/>
+          <path id="lane3" d="M120,180 Q 300,260 560,150 T 800,90" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="6 6"/>
+
+          <g class="port">
+            <circle cx="110" cy="90" r="5" fill="#F5A623"/>
+            <text x="118" y="85" class="port-label">Rotterdam</text>
+          </g>
+          <g class="port">
+            <circle cx="700" cy="110" r="5" fill="#F5A623"/>
+            <text x="708" y="105" class="port-label">Singapore</text>
+          </g>
+          <g class="port">
+            <circle cx="150" cy="300" r="5" fill="#F5A623"/>
+            <text x="158" y="318" class="port-label">Santos</text>
+          </g>
+          <g class="port">
+            <circle cx="760" cy="230" r="5" fill="#F5A623"/>
+            <text x="768" y="248" class="port-label">Dar es Salaam</text>
+          </g>
+          <g class="port">
+            <circle cx="560" cy="150" r="5" fill="#F5A623"/>
+            <text x="568" y="145" class="port-label">Dubai</text>
+          </g>
+
+          <circle r="4.5" fill="#0B1F3A" stroke="#F5A623" stroke-width="2">
+            <animateMotion dur="7s" repeatCount="indefinite">
+              <mpath href="#lane1"/>
+            </animateMotion>
+          </circle>
+          <circle r="4.5" fill="#0B1F3A" stroke="#F5A623" stroke-width="2">
+            <animateMotion dur="9s" repeatCount="indefinite">
+              <mpath href="#lane3"/>
+            </animateMotion>
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / CONTACT -->
+  <section id="quote" class="quote">
+    <div class="wrap quote-grid">
+      <div class="quote-copy">
+        <p class="eyebrow eyebrow-dark">REQUEST A RATE</p>
+        <h2 class="section-title">Tell us what's moving.</h2>
+        <p>Fill in the manifest and our booking desk replies within one business day with a rate and transit time.</p>
+
+        <ul class="contact-list" id="contact">
+          <li><strong>Booking desk</strong><span>booking@anchorlinecargo.example</span></li>
+          <li><strong>Operations (24/7)</strong><span>+1 (302) 555-0148</span></li>
+          <li><strong>HQ</strong><span>14 Harborview Quay, Wilmington, DE</span></li>
+        </ul>
+      </div>
+
+      <form class="quote-form" id="quoteForm" novalidate>
+        <div class="form-row">
+          <label for="fName">Full name</label>
+          <input type="text" id="fName" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="fEmail">Email</label>
+          <input type="email" id="fEmail" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row form-row-split">
+          <div>
+            <label for="fOrigin">Origin</label>
+            <input type="text" id="fOrigin" name="origin" placeholder="Port or city" required>
+          </div>
+          <div>
+            <label for="fDest">Destination</label>
+            <input type="text" id="fDest" name="destination" placeholder="Port or city" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="fMode">Mode</label>
+          <select id="fMode" name="mode">
+            <option>Ocean — FCL</option>
+            <option>Ocean — LCL</option>
+            <option>Air Freight</option>
+            <option>Rail &amp; Road</option>
+            <option>Warehousing</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="fNotes">Cargo details</label>
+          <textarea id="fNotes" name="notes" rows="3" placeholder="Commodity, weight, dimensions"></textarea>
+        </div>
+        <button type="submit" class="btn btn-amber btn-block">Submit manifest</button>
+
+        <div class="form-confirm" id="formConfirm" hidden>
+          <p>Manifest received. Reference number:</p>
+          <p class="mono confirm-num" id="confirmNum"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">ANCHORLINE<span class="brand-sub">CARGO</span></span>
+      <p>Freight forwarding for people who ship things that matter.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Company</h4>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#routes">Routes</a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="#quote">Request a quote</a>
+        <a href="#contact">Contact desk</a>
+      </div>
+    </div>
+    <p class="footer-fine">© <span id="year"></span> Anchorline Cargo. Coordinates shown are illustrative. Fictional company created for demonstration.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
